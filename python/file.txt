@@ -1,0 +1,2 @@
+Now file will  automically close.Now this line will get append in the file. 
+ this will get append on next line
