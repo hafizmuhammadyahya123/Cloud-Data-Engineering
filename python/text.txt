@@ -1,2 +1,0 @@
-this is text file..new line add using --> append concept
-next line text generated using --> escape character like (back slash n)..
