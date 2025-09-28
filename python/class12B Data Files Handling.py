@@ -18,7 +18,3 @@ with open('file.txt' , 'w')  as f:
 with open('file.txt' , 'a') as f:
     f.write('Now this line will get append in the file. \n this will get append on next line')
 
-# using read() method , 'r' 
-with open('text.txt' , 'r') as f:
-    file_content = f.read()
-    print(f"Now Read file:- {file_content}") 
