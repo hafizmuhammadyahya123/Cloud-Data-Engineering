@@ -93,3 +93,26 @@ print(lst_comp[1])
 lst_comp = [i if i % 2 == 1 else {i : 'even_no#'}  for i in range(7)]
 print(lst_comp)
 print(f'index number = 0 = {lst_comp[0]}')
+
+# . List Comprehension main elif nhi use hota only 2 conditions allowed(if , else) 
+# --------------------------------------------------------------------------------
+
+# Topic: Dictionary Comprehension
+
+# Normal way of coding without Dict Comp
+lst1 = ['Name' , 'Age' , 'Gender' , 'Salary']
+lst2 = ['Qasim' , 28 , 'Male' , 6000000]
+
+bio_data = {}
+for temp_var in zip(lst1 , lst2):
+
+    bio_data[temp_var[0]] = temp_var[1]
+
+print(f'BIO_DATA{bio_data}')
+
+# Use Dictionary Comprehension
+dic_comp = {i[0]:i[1]  for i in zip(lst1 , lst2)}
+print(f'Write Bio Data uing Dictionary Comprehension {dic_comp}.')
+
+
+
