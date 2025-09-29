@@ -57,3 +57,39 @@ print(f'NULL = {ListComprehension}')
 print('index number = ' , ListComprehension[0])
 print(id(ListComprehension))
 
+# Normal Way.. 
+# not use list comprehension
+# using conditins(if, else)
+list = []
+for temp_var in range(10):
+
+    if temp_var % 2 == 0:
+        list.append(temp_var)
+    else:
+        list.append('odd')
+
+print(list)        
+# ---------------------------
+# similarly, above and below
+# ---------------------------
+# list comprehension & using condition(if, else)
+# .Jb more then 1 conditions use ho tB conditions pehly store & phir loop
+
+lst_comp = [temp_var if temp_var % 2 == 0 else "odd" for temp_var in range(10)]
+print(lst_comp)
+
+# List comprehension & using 1 condition only 
+# .Jb 1 condition use ho tb loop pehly and condition baad main store hogi List comprehension main
+lst_comp = [temp for temp in range(10) if temp % 2 == 0]
+print(lst_comp)
+
+lst_comp = [i if i % 2 == 1 else 'Even_Number' for i in range(12)]
+print(lst_comp)
+# -----------------------------------------------------------------
+lst_comp = [i if i % 2 == 0 else [i , 'is_odd'] for i in range(12)]
+print(lst_comp)
+print(lst_comp[1])
+
+lst_comp = [i if i % 2 == 1 else {i : 'even_no#'}  for i in range(7)]
+print(lst_comp)
+print(f'index number = 0 = {lst_comp[0]}')
